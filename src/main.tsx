@@ -7,6 +7,7 @@ import {
   useState,
 } from "react";
 import { createRoot } from "react-dom/client";
+import { inject } from "@vercel/analytics";
 import {
   experience,
   profile,
@@ -595,5 +596,7 @@ function App() {
     </main>
   );
 }
+
+inject();
 
 createRoot(document.getElementById("root")!).render(<App />);
