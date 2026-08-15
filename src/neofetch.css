@@ -1,0 +1,47 @@
+.neofetch {
+  display: grid;
+  grid-template-columns: minmax(10rem, 14rem) minmax(0, 1fr);
+  gap: 1.6rem;
+  align-items: center;
+  max-width: 42rem;
+  margin: 0;
+}
+
+.neofetch-logo {
+  margin: 0;
+  color: var(--color-primary);
+  font: inherit;
+  line-height: 1.35;
+  white-space: pre;
+}
+
+.neofetch-info {
+  display: grid;
+  grid-template-columns: 5rem minmax(0, 1fr);
+  gap: 0.15rem 1rem;
+  margin: 0;
+  padding-left: 1.6rem;
+  border-left: 1px solid var(--color-surface-variant);
+}
+
+.neofetch-info dt {
+  color: var(--color-muted);
+}
+
+.neofetch-info dd {
+  margin: 0;
+  color: var(--color-secondary);
+}
+
+@media (max-width: 640px) {
+  .neofetch {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .neofetch-info {
+    padding: 1rem 0 0;
+    border-top: 1px solid var(--color-surface-variant);
+    border-left: 0;
+  }
+}

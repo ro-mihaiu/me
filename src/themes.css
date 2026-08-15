@@ -1,0 +1,88 @@
+body[data-theme="blurple"] {
+  --color-background: #10101a;
+  --color-primary: #9b7bff;
+  --color-primary-container: #211b3b;
+  --color-secondary: #e6e0ff;
+  --color-surface-variant: #4b4670;
+  --color-muted: #aaa4c9;
+  --color-success: #73e0c2;
+  --color-warning: #f8ca6e;
+  --color-error: #ff8ba7;
+}
+
+body[data-theme="quartz"] {
+  --color-background: #19191c;
+  --color-primary: #f0eef2;
+  --color-primary-container: #2a2a2f;
+  --color-secondary: #fbf9fb;
+  --color-surface-variant: #55555d;
+  --color-muted: #b9b8bf;
+  --color-success: #b8dfbd;
+  --color-warning: #e5d48c;
+  --color-error: #efa2aa;
+}
+
+body[data-theme="midnight"] {
+  --color-background: #0d1020;
+  --color-primary: #8ba8ff;
+  --color-primary-container: #1b2240;
+  --color-secondary: #dce6ff;
+  --color-surface-variant: #3e4b75;
+  --color-muted: #9ca9c7;
+  --color-success: #8ad6a4;
+  --color-warning: #e5c477;
+  --color-error: #f28ca8;
+}
+
+body[data-theme="forest"] {
+  --color-background: #0c1510;
+  --color-primary: #78d98a;
+  --color-primary-container: #193325;
+  --color-secondary: #d9edda;
+  --color-surface-variant: #3d6349;
+  --color-muted: #9ab59f;
+  --color-success: #a6e881;
+  --color-warning: #d9c56e;
+  --color-error: #f08d8d;
+}
+
+.theme-picker {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  max-width: 48rem;
+  margin-top: 1rem;
+}
+
+.theme-option {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.8rem 0.9rem;
+  text-align: left;
+  color: var(--color-secondary);
+  border: 1px solid var(--color-surface-variant);
+  background: color-mix(in srgb, var(--color-primary-container) 72%, transparent);
+}
+
+.theme-option:hover,
+.theme-option.is-active {
+  border-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.theme-option-name,
+.theme-current {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.theme-option-description {
+  color: var(--color-muted);
+  font-size: 0.82em;
+}
+
+@media (max-width: 640px) {
+  .theme-picker {
+    grid-template-columns: 1fr;
+  }
+}

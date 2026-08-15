@@ -1,0 +1,25 @@
+.project-view .terminal {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-view .output {
+  flex: 1;
+}
+
+.project-view .entry {
+  min-height: 100%;
+  margin-bottom: 0;
+}
+
+.project-view .project-output {
+  min-height: calc(100% - 5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.prompt-host {
+  color: var(--color-secondary);
+  font-weight: 600;
+}

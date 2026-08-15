@@ -1,0 +1,40 @@
+.command-reference {
+  display: grid;
+  gap: 1.35rem;
+  max-width: 58rem;
+  margin-top: 1rem;
+}
+
+.command-group {
+  margin: 0;
+}
+
+.command-category {
+  margin: 0 0 0.35rem;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.command-table {
+  border-top: 1px solid var(--color-surface-variant);
+}
+
+.command-row {
+  display: grid;
+  grid-template-columns: minmax(10rem, 15rem) minmax(0, 1fr);
+  gap: 1.25rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--color-surface-variant) 55%, transparent);
+}
+
+.command-row code {
+  color: var(--color-secondary);
+}
+
+@media (max-width: 640px) {
+  .command-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
