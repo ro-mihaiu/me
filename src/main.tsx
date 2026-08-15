@@ -7,6 +7,7 @@ import {
   useState,
 } from "react";
 import { createRoot } from "react-dom/client";
+import { Analytics } from "@vercel/analytics/react";
 import {
   experience,
   profile,
@@ -521,6 +522,7 @@ function App() {
       className={`terminal-shell ${projectView ? "project-view" : ""}`}
       aria-label="Mihai's developer portfolio"
     >
+      <Analytics />
       <header className="chrome">
         <div className="window-controls" aria-hidden="true">
           <i />
