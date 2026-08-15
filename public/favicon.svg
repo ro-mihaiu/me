@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Arch logo favicon">
+  <defs>
+    <linearGradient id="archPink" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ff6baa"/>
+      <stop offset="100%" stop-color="#ff0f68"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#111116"/>
+  <path d="M64 18c-8.8 0-16 7.2-16 16v12.5c0 10.6-8.5 19.1-19.1 19.1H16.2v18.8h12.7c10.6 0 19.1 8.5 19.1 19.1V96c0 8.8 7.2 16 16 16h2.3v-18.5h-2.3c-3 0-5.5-2.5-5.5-5.5V84.4c0-6.1-4.9-11-11-11H28.7V54.6h12.8c6.1 0 11-4.9 11-11V31c0-3 2.5-5.5 5.5-5.5h5.9V18zm0 0v18.5h5.9c3 0 5.5 2.5 5.5 5.5v12.6c0 6.1 4.9 11 11 11h12.8v18.8h-12.8c-6.1 0-11 4.9-11 11v12.6c0 3-2.5 5.5-5.5 5.5h-2.3V96h2.3c8.8 0 16-7.2 16-16V66.6c0-10.6 8.5-19.1 19.1-19.1h12.7V28.7h-12.7c-10.6 0-19.1-8.5-19.1-19.1V18H64z" fill="url(#archPink)"/>
+  <path d="M64 40 82 88h-13l-5-14h-12l-5 14H46L64 40zm-4.5 23h9l-4.5-12.5L59.5 63z" fill="#111116"/>
+  <circle cx="64" cy="24" r="7" fill="#ff8ab4" opacity="0.95"/>
+  <circle cx="64" cy="24" r="3.5" fill="#fff" opacity="0.9"/>
+</svg>

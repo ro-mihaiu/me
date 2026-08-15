@@ -9,6 +9,7 @@
     "preview": "vite preview --config config/vite.config.ts"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "@vitejs/plugin-react": "latest",
     "react": "latest",
     "react-dom": "latest",

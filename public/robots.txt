@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://ro-mihaiu.xyz/sitemap.xml
+Disallow: /private/
