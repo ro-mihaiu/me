@@ -34,6 +34,8 @@
 .blog-content p {
   margin-bottom: 1rem;
   line-height: 1.6;
+  text-indent: 2em;
+  text-align: justify;
 }
 
 .blog-content ul,
