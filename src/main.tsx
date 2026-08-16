@@ -17,7 +17,7 @@ import {
   stack,
   type Project,
   type StackItem,
-} from "./data.tsx";
+} from "./data";
 import "./styles.css";
 import "./project-view.css";
 import "./experience.css";
@@ -859,7 +859,6 @@ function App() {
     <main
       className={`terminal-shell ${projectView ? "project-view" : ""}`}
       aria-label="Mihai's developer portfolio"
-      aria-label="mihulish"
     >
       <Analytics />
       <header className="chrome">
