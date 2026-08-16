@@ -17,7 +17,7 @@ import {
   stack,
   type Project,
   type StackItem,
-} from "./data";
+} from "./data.tsx";
 import "./styles.css";
 import "./project-view.css";
 import "./experience.css";
@@ -72,7 +72,7 @@ function ProjectList({ one }: { one?: Project }) {
   return (
     <section className="project-output" aria-label="Selected projects">
       <p className="path">~/projects</p>
-      {displayed.map((project, index) => (
+      {displayed.map((project: Project, index: number) => (
         <article className="project" key={project.name}>
           <p>
             <span className="tree">
@@ -136,7 +136,7 @@ function About() {
 function StackLinks({ items }: { items: StackItem[] }) {
   return (
     <span className="stack-links">
-      {items.map((item, index) => (
+      {items.map((item: StackItem, index: number) => (
         <span key={item.name}>
           <a href={item.url} target="_blank" rel="noreferrer">
             {item.name}
@@ -630,7 +630,7 @@ function App() {
       applyRoute("about");
     } else if (name === "projects") {
       if (args[0]) {
-        const project = projects.find((p) => p.name === args[0]);
+        const project = projects.find((p: Project) => p.name === args[0]);
         output = project ? <ProjectList one={project} /> : <Projects />;
       } else {
         output = <Projects />;
@@ -644,7 +644,7 @@ function App() {
       if (newTheme) changeTheme(newTheme.id);
       output = newTheme ? <p>Theme set to {newTheme.name}</p> : <Themes />;
     } else if (name === "project") {
-      const project = projects.find((p) => p.name === args[0]);
+      const project = projects.find((p: Project) => p.name === args[0]);
       output = project ? (
         <ProjectList one={project} />
       ) : (
