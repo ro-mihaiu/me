@@ -17,7 +17,7 @@ import {
   stack,
   type Project,
   type StackItem,
-} from "./data.tsx";
+} from "./data";
 import "./styles.css";
 import "./project-view.css";
 import "./experience.css";
