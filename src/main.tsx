@@ -17,7 +17,7 @@ import {
   stack,
   type Project,
   type StackItem,
-} from "./data";
+} from "./data.tsx";
 import "./styles.css";
 import "./project-view.css";
 import "./experience.css";
@@ -186,7 +186,7 @@ function ExperienceOutput() {
       <p className="path">~/experience</p>
       <p className="muted">Discord staff roles</p>
       <div className="experience-list">
-        {experience.map((item, index) => (
+        {experience.map((item, index: number) => (
           <article className="experience-item" key={item.url}>
             <p>
               <span className="tree">
