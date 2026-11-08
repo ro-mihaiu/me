@@ -13,6 +13,7 @@ export const meta: BlogMeta = {
   title: "My New Post",
   description: "A short description of my new post.",
   createdAt: "2023-10-28", // YYYY-MM-DD
+  hidden: true
 };
 
 export default function Content() {

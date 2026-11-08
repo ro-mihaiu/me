@@ -42,7 +42,7 @@
   }
 
   .terminal {
-    padding: 1.15rem 1rem 1rem;
+    padding: 1.15rem 0.875rem 0.875rem;
   }
 
   nav {
@@ -71,6 +71,14 @@
     overflow-wrap: anywhere;
   }
 
+  nav a,
+  .project,
+  .blog-list-item,
+  .blog-content {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
   .project-details,
   .experience-members {
     padding-left: 1rem;
@@ -78,7 +86,7 @@
 
   .input-line {
     gap: 0.55rem;
-    padding-top: 0.85rem;
+    padding-top: 0.7rem;
   }
 
   .input-line input {

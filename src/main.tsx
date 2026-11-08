@@ -119,14 +119,14 @@ function About() {
       <dl className="identity">
         <dt>hobby</dt>
         <dd>developer / builder / gamer</dd>
-        <dt>home</dt>
+        <dt>portfolio</dt>
         <dd>
-          <a href="/" className="no-underline">
-            {profile.hostname}
+          <a href={profile.portfolio} className="no-underline">
+            ro-mihaiu.xyz
           </a>
         </dd>
-        <dt>currently</dt>
-        <dd>shipping experiments and useful tools</dd>
+        <dt>role</dt>
+        <dd>Manager &amp; Dev at TheySix · Admin at PocketHost</dd>
         <dt>location</dt>
         <dd>Romania</dd>
       </dl>
@@ -276,7 +276,7 @@ function Projects() {
       <p className="path">~/projects</p>
       <p>Which project would you like to view?</p>
       <p className="muted">Usage: project &lt;name&gt;</p>
-      <p>Available projects: `bc`, `pbinfo`, `bot`</p>
+      <p>Available projects: `bc`, `pbinfo`, `bot`, `calendar`, `ts-server`, `ts-website-events`, `ts-website-wiki`</p>
     </section>
   );
 }
@@ -333,7 +333,7 @@ function Help() {
       commands: [
         ["about / whoami", "show a short introduction"],
         ["projects", "open selected work in a full terminal view"],
-        ["project <name>", "inspect bc, pbinfo, or bot"],
+        ["project <name>", "inspect a selected project"],
         ["experience", "view Discord staff experience"],
         ["stack", "view stack by frontend, backend, database, and API"],
         ["contact", "open social contact links"],
@@ -649,7 +649,7 @@ function App() {
         <ProjectList one={project} />
       ) : (
         <p className="error">
-          project not found: {args[0] || "(choose bc, pbinfo, or bot)"}
+          project not found: {args[0] || "(choose a project from `projects`)"}
         </p>
       );
     } else if (name === "stack") {
@@ -867,7 +867,7 @@ function App() {
           <i />
           <i />
         </div>
-        <span>portfolio@{profile.hostname}</span>
+        <span className="chrome-title">portfolio@{profile.hostname}</span>
         <span className="status" title="This site is online and operational.">
           online
         </span>

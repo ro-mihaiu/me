@@ -12,10 +12,29 @@ export default function Content() {
   return (
     <>
       <p>
-        The journey started when I got the <b>Manager</b> role in <u>Frostspire Network</u>, and I was given a task to set up a server for our internal tools. I was using Windows at the time, but I needed to connect to the server using SSH, and I found a quick workaround by using <u>WSL</u> (Windows Subsystem for Linux).
+        The journey started when I got the <b>Manager</b> role in{" "}
+        <a href="https://dcd.gg/fnet" target="_blank" rel="noreferrer">
+          <u>Frostspire Network</u>
+        </a>
+        , and I was given a task to set up a server for our internal tools. I
+        was using Windows at the time, but I needed to connect to the server
+        using SSH, and I found a quick workaround by using <u>WSL</u> (Windows
+        Subsystem for Linux).
       </p>
       <p>
-        I was amazed by the power of Linux and how it could be used to manage servers. I started to learn more about Linux and its various distributions. But I was a bit scared of this change till my friend Absyllute convinced me to just make the switch and forget about Windows. He suggested Arch Linux, especially since I already had some experience with coding and Linux commands.
+        I was amazed by the power of Linux and how it could be used to manage
+        servers. I started to learn more about Linux and its various
+        distributions. But I was a bit scared of this change till my friend{" "}
+        <a
+          href="https://discord.com/users/1336019718644957195/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Absyllute
+        </a>{" "}
+        convinced me to just make the switch and forget about Windows. He
+        suggested Arch Linux, especially since I already had some experience
+        with coding and Linux commands.
       </p>
       <p>
         So, I decided to take the plunge. I backed up all my important stuff (mostly games and school projects, lol) and wiped my drive. No going back now! The Arch Wiki became my new best friend. Seriously, that thing is a lifesaver, even if the installation guide looked super intimidating at first—just a wall of text and commands.

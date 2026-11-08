@@ -35,6 +35,7 @@ export type Blog = BlogMeta & { content: React.ReactNode };
 export const profile = {
   name: "Mihai",
   github: "https://github.com/ro-mihaiu",
+  portfolio: "https://ro-mihaiu.xyz/",
   hostname: "ro-mihaiu.xyz",
   instagram: "https://instagram.ro-mihaiu.xyz",
   discord: "https://discord.ro-mihaiu.xyz",
@@ -96,28 +97,16 @@ export const stack = {
 
 export const experience: Experience[] = [
   {
-    role: "Manager",
-    community: "TheySix | Minecraft",
-    url: "https://discord.gg/theysix",
-    members: "100k+",
+    role: "Manager & Dev",
+    community: "TheySix",
+    url: "https://theysix.tech/",
+    members: "117k+",
   },
   {
-    role: "Mod",
-    community: "PocketCraft",
-    url: "https://dcd.gg/pocketcraft",
-    members: "750+",
-  },
-  {
-    role: "Manager",
-    community: "Frostspire | Minecraft SMP & Hosting",
-    url: "https://dcd.gg/fnet",
-    members: "250+",
-  },
-  {
-    role: "Owner",
-    community: "mihu's pws",
-    url: "https://dcd.gg/mihu",
-    members: "40+",
+    role: "Admin",
+    community: "PocketHost",
+    url: "https://pockethost.online/",
+    members: "1,8k+",
   },
 ];
 
@@ -142,5 +131,33 @@ export const projects: Project[] = [
     url: "https://bot.ro-mihaiu.xyz",
     label: "bot.ro-mihaiu.xyz",
     status: "live",
+  },
+  {
+    name: "calendar",
+    description: "A school timetable and cleaning rotation dashboard.",
+    url: "https://github.com/ro-mihaiu/calendar",
+    label: "github.com/ro-mihaiu/calendar",
+    status: "source",
+  },
+  {
+    name: "ts-server",
+    description: "Versioned configuration and operations for the TheySix server.",
+    url: "https://github.com/ro-mihaiu/ts-server",
+    label: "github.com/ro-mihaiu/ts-server",
+    status: "source",
+  },
+  {
+    name: "ts-website-events",
+    description: "The information website for TheySix Events.",
+    url: "https://github.com/ro-mihaiu/ts-website-events",
+    label: "github.com/ro-mihaiu/ts-website-events",
+    status: "source",
+  },
+  {
+    name: "ts-website-wiki",
+    description: "A structured wiki for TheySix farms and guides.",
+    url: "https://github.com/ro-mihaiu/ts-website-wiki",
+    label: "github.com/ro-mihaiu/ts-website-wiki",
+    status: "source",
   },
 ];
